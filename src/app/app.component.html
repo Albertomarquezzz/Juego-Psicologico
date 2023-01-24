@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="app.component.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Tarea</title>
+</head>
+<body>
+  <h1 id="Titulo">Juego Psicologico</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-1.">
+                <input type="button" value="Rojo" id="btnred" class="c" (click)="comprobar(0)">
+                <input type="button" value="Amarillo" id="btnblack" class="c" (click)="comprobar(1)">
+            </div>
+            <div class="col-1.">
+                <input type="button" value="Azul" id="btnyellow" class="c" (click)="comprobar(2)">
+                <input type="button" value="Verde" id="btnblue" class="c"  (click)="comprobar(3)">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-1.">
+            <div class="d" id="boton" style='background-color: {{color}}'></div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-1.">
+            <h4>Aciertos: </h4>
+            <h4>Fallos: </h4>
+          </div>
+          <div class="col-1.">
+            <h4>{{aciertos}}</h4>
+            <h4>{{fallos}}</h4>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
