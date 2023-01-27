@@ -4,7 +4,7 @@
     font-weight:900;
 }
 .d{
-    margin-top: 5%;
+    margin-top: 2%;
     width:30rem;
     height: 5rem;
     border: 1px solid rgb(168, 168, 168);   
@@ -28,16 +28,24 @@
 
 #btnred{
     background-color: rgba(68, 0, 255, 0.8);
+    color:rgb(45, 199, 45);
 }
 #btnyellow{
     background-color: rgba(255, 0, 30, 0.8);
+    color: yellow;
 }
 #btngreen{
     background-color: rgba(0, 0, 0, 0.8);
+    color: blue;
 }
 #btnblue{
     background-color: rgba(225, 255, 0, 0.8);
+    color: red;
 }
 #btnblack{
     background-color: rgba(2, 255, 40, 0.8);
+    color: blue;
+}
+p{
+    text-align: center;
 }

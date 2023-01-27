@@ -42,24 +42,32 @@ export class AppComponent {
     }
     else if(this.color == 'blue' && x != 2){
       this.fallos++
+      alert("Fallaste")
+      this.aciertos=0
     }
     else if(this.color == 'red' && x == 0){
       this.aciertos++
     }
     else if(this.color == 'red' && x != 0){
       this.fallos++
+      alert("Fallaste")
+      this.aciertos=0
     }
     else if(this.color == 'green' && x == 3){
       this.aciertos++
     }
-    else if(this.color == 'green' && x != 3){
+    else if(this.color == 'green' && x != 4){
       this.fallos++
+      alert("Fallaste")
+      this.aciertos=0
     }
     else if(this.color == 'yellow' && x == 1){
       this.aciertos++
     }
     else if(this.color == 'yellow' && x != 1){
       this.fallos++
+      alert("Fallaste")
+      this.aciertos=0
     }
     this.cambiarcolor()
   }
